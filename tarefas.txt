@@ -1,0 +1,48 @@
+INSTRUÇÕES
+
+Exercício 1
+Crie as seguintes classes com seus respectivos atributos:
+Cliente(cpf, nome, datanascimento)
+Produto(codigo, descricao, qtdestoque)
+Venda(codigo, datahora, cliente, produto)
+
+Exercício 2
+Instancie a seguinte quantidade de objetos para cada classe, sabendo que os atributos "cliente" e "produto" da Venda fazem referência a clientes e produtos que já existem:
+Cliente - 3 objetos
+Produto - 8 objetos
+Venda - 5 objetos
+
+Exercício 3
+Crie 3 arrays, cada um para guardar os objetos de determinada classe. Em seguida, percorra cada um dos arrays exibindo os seguintes atributos:
+Cliente - nome
+Produto - descricao
+Venda - datahora
+
+Exercício 4
+Utilize o método .map( ) para transformar cada array que você criou num objeto da classe Map( ), de modo que as respectivas chaves e valores sejam os que se seguem:
+Cliente: cpf -> [ nome, datanascimento ]
+Produto: codigo -> [ descricao, qtdestoque ]
+Venda: codigo -> [ datahora, cliente, produto ]
+Map(5) {
+  'Harry Potter' => [ 7, 'Aprovado' ],
+  'Hermione Granger' => [ 10, 'Aprovado' ],
+  'Ronald Weasley' => [ 8, 'Aprovado' ],
+  'Draco Malfoy' => [ 6.3, 'Reprovado' ],
+  'Luna Lovegood' => [ 10, 'Aprovado' ]
+}
+
+Exercício 5
+Faça a mesma coisa que o exercício anterior, porém agora os valores devem ser exibidos em formato de objeto ao invés de array.
+Cliente: cpf -> { nome, datanascimento }
+Produto: codigo -> { descricao, qtdestoque }
+Venda: codigo -> { datahora, cliente, produto }
+Map(5) {
+  'Harry Potter' => { nota: 7, situacao: 'Aprovado' },
+  'Hermione Granger' => { nota: 10, situacao: 'Aprovado' },
+  'Ronald Weasley' => { nota: 8, situacao: 'Aprovado' },
+  'Draco Malfoy' => { nota: 6.3, situacao: 'Reprovado' },
+  'Luna Lovegood' => { nota: 10, situacao: 'Aprovado' }
+}
+
+ENTREGÁVEL 
+Arquivo JS
